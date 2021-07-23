@@ -1,0 +1,115 @@
+$gray: hsl(0, 0%, 95%)
+$orange: hsl(31, 77%, 52%)
+$darkCyan: hsl(184, 100%, 22%)
+$vDarkCyan: hsl(179, 100%, 13%)
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap')
+
+$fontStack: 'Lexend Deca', sans-serif
+$fontBold: 'Big Shoulders Display', cursive
+    
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+
+body
+    background-color: $gray
+    font-size: 15px
+    color: hsla(0, 0%, 100%, 0.75)
+    font-family: $fontStack
+
+.container
+    min-height: 100vh
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+
+.card-component-wrapper
+    overflow: hidden
+    border-radius: 10px
+    margin: 5%
+    display: flex
+    flex-direction: column
+    max-width: 500px
+
+.card
+    padding: 2.5rem
+    max-width: 350px
+
+.card-header
+    img
+        display: block
+        height: 1.8rem
+        margin-bottom: 2rem
+    h1
+        font-family: $fontBold
+        color: $gray
+        text-transform: uppercase
+        margin-bottom: 2rem
+        letter-spacing: 1px
+        font-size: 2rem
+
+.card-text
+    margin-bottom: 1.5rem
+    line-height: 1.5rem
+    padding-right: 1rem
+    margin-bottom: 2rem
+
+
+.sedan
+    background-color: $orange
+
+
+.suv
+    background-color: $darkCyan
+
+.luxury
+    background-color: $vDarkCyan
+
+.card-btn
+    background-color: $gray
+    border: 1px solid $gray
+    padding: .5rem 1.2rem
+    font-size: .8rem
+    border-radius: 1rem
+    &:hover
+        background-color: transparent
+        cursor: pointer
+      
+.sedan-btn
+    color: $orange
+    &:hover
+        color: $gray
+
+.suv-btn
+    color: $darkCyan
+    &:hover
+        color: $gray
+
+.luxury-btn
+    color: $vDarkCyan
+    &:hover
+        color: $gray
+
+.attribution 
+    font-size: 11px
+    text-align: center
+    color: rgba(0, 0, 0, .6)
+    padding: .5rem
+    border-radius: 5px
+    a 
+        color: hsl(228, 45%, 44%)
+
+@media screen and ( min-width: 1000px )
+    .card-component-wrapper
+        max-width: 1200px
+        flex-direction: row
+
+    .card
+        max-width: 300px
+
+    .card-text
+        margin-bottom: 4rem
+        
