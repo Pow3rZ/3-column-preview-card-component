@@ -6,7 +6,7 @@
   padding: 0;
 }
 
-body {
+html {
   background-color: #f2f2f2;
   font-size: 15px;
   color: rgba(255, 255, 255, 0.75);
@@ -133,6 +133,9 @@ body {
 }
 
 @media screen and (min-width: 1000px) {
+  html {
+    font-size: 17px
+  }
   .card-component-wrapper {
     max-width: 1200px;
     -webkit-box-orient: horizontal;
