@@ -26,7 +26,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/Pow3rZ/3-column-preview-card-component]
-- Live Site URL: [Add live site URL here]
+- Live Site URL: [https://pow3rz.github.io/3-column-preview-card-component/]
 
 ## My process
 
